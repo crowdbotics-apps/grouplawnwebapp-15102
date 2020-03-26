@@ -1,12 +1,9 @@
+FROM node:10
 
-FROM alpine:3.10
-
-# Install system dependencies
-RUN apk add --no-cache --update   bash   gcc   g++   make   python2   python2-dev   py2-pip   musl-dev   postgresql-dev   git   nodejs   nodejs-npm
+ENV NODE_VERSION 13.7.0
+RUN apt update
 
 ADD ./ /app/webapp/
 WORKDIR /app/webapp/
-RUN npm install
-RUN adduser -D myuser
-USER myuser
+RUN npm install && cd react/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build
 CMD ["npm", "start"]
