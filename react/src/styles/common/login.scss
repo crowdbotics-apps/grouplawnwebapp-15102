@@ -1,0 +1,100 @@
+.dp-login-wrapper {
+  background-color: #6495ed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  max-height: 100vh;
+  & .dp-content-wrapper {
+    width: 60%;
+    height: 70vh;
+    margin: 15vh auto;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    & .dp-login-img-cover {
+      flex: 1;
+      border-radius: 10px 0 0 10px;
+      background-color: #4f5357;
+      position: relative;
+      & .img-cover-opac {
+        opacity: 0.39;
+      }
+      .img-cover-icon {
+        position: absolute;
+        align-self: center;
+        top: 38%;
+        left: 38%;
+        resize: cover;
+      }
+    }
+    & .dp-login-form {
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 40px 40px 40px 40px;
+      border: 0.5px solid #ddd;
+      & .dp-login-form-wrapper {
+        padding: 7% 10% 10% 10%;
+        & .dp-login-title {
+          font-weight: 300;
+          color: #626B7B;
+          font-size: 16px;
+        }
+        & .dp-login-conatiner {
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+          & .dp-login-email {
+            height: 44px;
+            border-radius: 24.5px;
+            border: 1px solid #d2d7ef;
+            padding-left: 20px;
+            font-size: 16px;
+            color: #A1A6A9;
+            outline: 0 !important;
+          }
+          & .dp-login-password {
+            margin-top: 24px;
+            height: 44px;
+            border-radius: 24.5px;
+            border: 1px solid #d2d7ef;
+            padding-left: 20px;
+            font-size: 16px;
+            color: #A1A6A9;
+            outline: 0 !important;
+          }
+        }
+        & .dp-login-button {
+          height: 44px;
+          width: 119px;
+          margin-top: 34px;
+          color: white;
+          text-align: center;
+          vertical-align: middle;
+          font-weight: 500;
+          line-height: 44px;
+          border-radius: 24.5px;
+          outline: none;
+          background: linear-gradient(315.16deg, #6495ed 0%, #6495ed 100%);
+          font-size: 16px;
+        }
+      }
+      & .dp-form {
+        padding-top: 3%;
+      }
+      & .dp-forgot-button {
+        background-color: transparent;
+        color: #ecf6fc;
+        border: none;
+        outline: none;
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+  }
+}
