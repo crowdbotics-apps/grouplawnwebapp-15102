@@ -1,6 +1,6 @@
 {
-  "name": "GreatPatriots-webDashboard",
-  "version": "4.1.0",
+  "name": "GroupLawn-webDashboard",
+  "version": "1.0.0",
 
   "scripts": {
     "start": "node server",
