@@ -17,7 +17,7 @@ import "./styles/bootstrap.scss";
 
 import Routes from "./routes";
 
-import App from "./screens/App/App";
+import App from "./screens/App/dashboard/Overview/Overview";
 
 let store = configureStore();
 
